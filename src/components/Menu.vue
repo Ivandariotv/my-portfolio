@@ -34,7 +34,7 @@ onMounted(() => {
 <template>
   <header
     id="landing-header"
-    class="flex gap-12 py-8 px-24 fixed top-0 w-full items-center text-white z-40"
+    class="flex gap-6 xl:gap-12 py-8 px-12 lg:px-24 fixed top-0 w-full items-center text-white z-40 hidden md:flex"
   >
     <div>
       <h1 class="text-2xl">
@@ -42,7 +42,7 @@ onMounted(() => {
         ><span class="text-gray-300">Via</span>
       </h1>
     </div>
-    <nav class="grow px-12">
+    <nav class="grow lg:px-4 xl:px-12">
       <ul
         class="flex text-sm [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-semibold [&>li>a]:transition-colors [&>li>a]:duration-500"
       >
@@ -61,18 +61,21 @@ onMounted(() => {
             href="https://www.linkedin.com/in/ivanviia/"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center"
-            ><linkedinIcon class="w-5 h-5 mr-2 fill-white" />Linkedin</a
-          >
+            class="flex items-center gap-2"
+            ><linkedinIcon class="w-5 h-5 fill-white" />
+            <span class="hidden lg:block">Linkedin</span>
+          </a>
         </li>
         <li>
           <a
             href="https://github.com/Ivandariotv"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center"
-            ><githubIcon class="w-5 h-5 mr-2 fill-white" />Github</a
+            class="flex items-center gap-2"
           >
+            <githubIcon class="w-5 h-5 fill-white" />
+            <span class="hidden lg:block">Github</span>
+          </a>
         </li>
       </ul>
     </nav>
